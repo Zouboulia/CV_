@@ -1,0 +1,81 @@
+body{
+    background: #F9F9F9;
+    font-family: Trebuchet MS;
+    /*text-align: center;  Commenting this out as it doesn't agree very well with lists it seems*/
+}
+
+h1,h2{
+color: #66bfbf;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+hr{
+    border-style: dotted none none; /*top border is dotted, then left and right are none, so no border, and bottom is none*/
+    border-color: grey;
+    border-width: 5px; /*this defines the width of the dots*/
+    width: 20%  /*this is the percentage of space they take on the page / horizontal line*/
+}
+
+.roles{
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.headings{
+text-shadow: 2px 2px 5px #A5F1E9;
+}
+
+#linkedin{
+    height: 30px;
+    width: 30px;
+    padding: 30px;
+    float: right;
+
+}
+
+.skill-wrapper{
+    display: inline-flex; /*Display of teh child boxes will be inline, or next to each other*/
+    justify-content:space-between; /*Adding a space between each element/box*/
+    flex-wrap: wrap; /*Allows the elements to wrap when on smaller screen widths, meaning tha one element might move down to fit screen*/
+}
+
+.skill-wrapper div{
+    border: 2px dashed grey; /*Added a colored border to the elements for visibility*/
+    padding: 2px; /*Added padding*/
+    flex-basis: 32%; /*Each element always takes 32% of the screen*/
+}
+
+.sk-title{
+    font-weight: 900; /*Titles appear in bold*/
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.education{
+    display: flex; /*Just fitting into flexbox layout however the wrap wouldn't do anything as there is only ne div in this section*/
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact{
+    display: flex; 
+    flex-wrap: wrap;
+  
+}
+
+.contact div{
+    flex-basis: 90%; /*Each element takes up 90% of the screen and is centered*/
+    justify-content: center;
+}
+
+.avatar{
+    height: 10%; /*Added avatar from flaticon outside of flexbox, resized and floated left*/
+    width: 10%;
+    float: left;
+}
