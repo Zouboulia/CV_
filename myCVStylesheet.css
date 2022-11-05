@@ -1,7 +1,6 @@
 body{
     background: #F9F9F9;
-    font-family: Trebuchet MS;
-    /*text-align: center;  Commenting this out as it doesn't agree very well with lists it seems*/
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1,h2{
@@ -12,11 +11,40 @@ h1,h3{
     text-align: center;
 }
 
+/*Top section*/
+.top{
+    justify-content: space-between;
+    padding: 25px 10px 15px;
+}
+
+
+.avatar{
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto; 
+    }
+
+/*Middle section*/
+/*.experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.education{
+    display: flex; Just fitting into flexbox layout however the wrap wouldn't do anything as there is only ne div in this section
+    flex-wrap: wrap;
+    flex-direction: column;
+} Commenting out these section as I am using flex from Bootstrap
+*/
+
+
+/*horrizontal rule / separators*/
 hr{
     border-style: dotted none none; /*top border is dotted, then left and right are none, so no border, and bottom is none*/
-    border-color: grey;
+    border-color: #2B4865;
     border-width: 5px; /*this defines the width of the dots*/
-    width: 20%  /*this is the percentage of space they take on the page / horizontal line*/
+    /*width: 20%  Deleting percentage from here as I set up a width in Bootstrap class for the hr*/
 }
 
 .roles{
@@ -28,54 +56,46 @@ hr{
 text-shadow: 2px 2px 5px #A5F1E9;
 }
 
-#linkedin{
-    height: 30px;
-    width: 30px;
-    padding: 30px;
-    float: right;
 
-}
-
+/*Skills section styling*/
 .skill-wrapper{
-    display: inline-flex; /*Display of teh child boxes will be inline, or next to each other*/
-    justify-content:space-between; /*Adding a space between each element/box*/
-    flex-wrap: wrap; /*Allows the elements to wrap when on smaller screen widths, meaning tha one element might move down to fit screen*/
+    /*display: inline-flex; Display of the child boxes will be inline, or next to each other
+    justify-content:space-between; /*Adding a space between each element/box
+    flex-wrap: wrap; Allows the elements to wrap when on smaller screen widths, meaning tha one element might move down to fit screen*/
 }
 
 .skill-wrapper div{
     border: 2px dashed grey; /*Added a colored border to the elements for visibility*/
     padding: 2px; /*Added padding*/
-    flex-basis: 32%; /*Each element always takes 32% of the screen*/
+    /*flex-basis: 32%; Each element always takes 32% of the screen*/
 }
 
 .sk-title{
     font-weight: 900; /*Titles appear in bold*/
 }
 
-.experience{
-    display: flex;
-    flex-direction: column;
+
+/*Bottom section/footer*/
+.toTop{
+    background-color: inherit;
+    border: none;
 }
 
-.education{
-    display: flex; /*Just fitting into flexbox layout however the wrap wouldn't do anything as there is only ne div in this section*/
-    flex-wrap: wrap;
-    flex-direction: column;
+.toTop:hover{
+    opacity: 0.5;
 }
 
-.contact{
-    display: flex; 
-    flex-wrap: wrap;
-  
-}
+#linkedin{
+    max-height: 40px;
+    max-width: 40px; 
+ }
 
-.contact div{
-    flex-basis: 90%; /*Each element takes up 90% of the screen and is centered*/
-    justify-content: center;
+ /*ancher tags styling to match back to top button style*/
+a{
+    text-decoration: none;
+    color: black;
 }
-
-.avatar{
-    height: 10%; /*Added avatar from flaticon outside of flexbox, resized and floated left*/
-    width: 10%;
-    float: left;
-}
+ a:hover{
+    opacity: 0.5;
+    color: black;
+ }

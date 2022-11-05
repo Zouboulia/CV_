@@ -2,137 +2,209 @@
 <html>
 	<head>
 		<title>Zouboulia's resume website</title>
+        
+        <!-- Bootstrap scripts: Mobile responsive behavior and CSS -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"/>
 
         <link rel="stylesheet" href="myCVStylesheet.css">
-
-	</head>
-	<body>
-        <div ><img class="avatar" src = "profile.png"> </div>
     
-        <div class ="contact">
-            <div><h1 id="top">Zouboulia Fanuda</h1></div>
-            <div><h3> Email: ********@gmail.com<br>
-            Tel: 086*******</h3></div>
-         </div>
+        <!-- Bootstrap scripts for JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous">
+        </script>
         
-        <br>
-        <br>
-        <br>
-        <div><a  id="anchor" href = "#anchor"> Go to next section</a></div>
-        <br>
-        <br>
-        <br>
+	</head>
 
-        <hr>
+	<body>
 
-        <br>
-        <br>
-        <br>
+        <script>
+            const toTop = () => window.scrollTo({top:0,behavior:'smooth'});
+          </script>
 
-        <div class="experience"> 
-            <h2 class ="headings" id = "anchor">Experience</h2>
+        <div class="container-fluid ps-5 pe-5"> <!--Adding some padding to start and end for all content in this container-->
 
-            <ul>
-                <li><strong>June 2021 to present: </strong> <span class = "roles"> Asset Management Compliance Consultant | IT Specialist</span>, SAP Ireland (Dublin/hybrid remote in Ireland)</li>
-                <li><strong>July 2019 to June 2021: </strong> <span class = "roles">License audit Specialist</span>, SAP Ireland (Galway)</li>
-                <li><strong>March 2012 to July 2019: </strong> <span class = "roles">Terms of Service Administrator</span>, Electronic Arts, Ireland (Galway)</li>
-                <li><strong>February 2010 to February 2012: </strong> <span class = "roles"> iTunes Store Support Advisor</span> (French/ English), Teleperformance, Greece Athens   </li>
-                <li><strong>December 2007 to February 2010: </strong> <span class = "roles">Technical Support for LENOVO (French)</span>, Teleperformance, Greece Athens</li>
-            </ul>
-        </div>
-        <br>
-        <br>
-        <br>
-        <a href = "#anchor2"> Go to next section</a>
-        <br>
-        <br>
-        <br>
-
-        <hr>
-
-        <br> <!--Adding multiple break lines to create space fot the anchor tags to jump between sections more obviously-->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class ="education"> 
-            <h2 class ="headings" id="anchor2" >Education</h2>
-
-            <ul>
-                <li> <strong>2021/2022: </strong>Certificate in Science in Computing Online, National College of Ireland.</li>
-                <li> <strong>2018: </strong>ICA Certificate in Compliance, ICA, International Compliance Association, University of Manchester, Alliance Manchester Business School</li>
-                <li> <strong>2008: </strong>Diploma Sorbonne2, C2, Greece: French proficiency diploma. </li>
-                <li> <strong>2007: </strong>License Langues Etrangères Appliquées (Applied Foreign Languages) – Marc Bloch University, Strasbourg, France:
-                    <ul>
-                        <li> Classes based on two main foreign languages: English and Modern Greek. Translation based courses as well as study of civilization and economy in these countries.</li>
-                        <li> Applied business and vocational courses such as computing, word-processing, general business duties/employment laws. Marketing basics, general economics and business, communication.</li>
-                    </ul>
-                </li>
-                <li><strong>2005: </strong>Baccalauréat L, High- School Graduate, Literature</li>
-            </ul>
-        </div>
-        <br>
-        <br>
-        <br>
-        <a href = "#anchor3"> Go to next section</a>
-        <br>
-        <br> <!--Adding multiple break lines to create space fot the anchor tags to jump between sections more obviously-->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <hr>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class ="skills flex-container" id="anchor3">
- 
-            <h2 class ="headings" >Skills</h2>
-
-            <div class="skill-wrapper"> 
-                <div> <span class="sk-title">Fluent Languages:</span> English , French, Greek</div>
-                <div><span class="sk-title">Tools: </span>Microsoft Office Suite (Outlook, Excel, PowerPoint, Word, Visio); JIRA; SAP Analytics Cloud; Adapt e-learning; LucidChart</div>
-                <div> <span class="sk-title">  Familiar with: </span>SQL, Java, Python, JavaScript, HTML, CSS, PowerApps; SAP Analytics Cloud; SAP BTP Process Automation low-code/No-code</div>
+            <!-- top section -->
+            <div class="row top">
+                <!-- all justification of the content, flex behavior and padding is done in the inbuilt bootstrap classes -->
+                <div class="col-lg-12 d-flex">
+                    <div class="col-lg-4 col-md-6 col-sm-5 pb-5 d-flex avatar-div justify-content-center align-self-center">
+                        <div>
+                            <img class="avatar img-fluid" src = "profile.png"> <!--fluid image will adapt to size of screen-->
+                        </div>
+                    </div>
+                
+                    <div class =" col-lg-8 col-md-6 col-sm-5 align-self-center"> <!--Aligning this div to center of parent div vertically-->
+                        <div class="d-flex justify-content-center"> <!--justifying content horizontally to center of div-->
+                            <h1>Zouboulia Fanuda </h1>
+                        </div> 
+                        <div div class="d-flex justify-content-center"> 
+                            <h3> Email: ********@gmail.com<br>
+                                Tel: 086*******</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <br>
-        <br>
-        <br>
-        <a href = "#top"> Go to top</a>
-        
-        <br>
-        <br>
-        <br>
+            <div>
 
-        <hr>
+ 
+            <!-- Middle section -->
+                <div class="col-lg-12 d-flex justify-content-start"> 
+                    <br>
+                    <br>
 
-        <br>
-        <br>
-        <br>
+                    <div>
+                        <a  id="anchor" href = "#anchor"> Go to next section</a>
+                    </div>
 
-        <div> 
-            <a  href="https://www.linkedin.com/in/zouboulia-fanuda/"> 
-                <img id = "linkedin" src="linkedin.png"> </a>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <!-- Putting Horizontal Rule in div -->
+                <div class="justify-content-center d-flex">
+                        <hr class="w-25"> <!--Width of the hr in the div-->
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+
+                <div class="experience col-lg-12 col-md-10 col-sm-10"> 
+                    <h2 class ="headings" id = "anchor">Experience</h2>
+
+                    <ul>
+                        <li><strong>June 2021 to present: </strong> <span class = "roles"> Asset Management Compliance Consultant | IT Specialist</span>, SAP Ireland (Dublin/hybrid remote in Ireland)</li>
+                        <li><strong>July 2019 to June 2021: </strong> <span class = "roles">License audit Specialist</span>, SAP Ireland (Galway)</li>
+                        <li><strong>March 2012 to July 2019: </strong> <span class = "roles">Terms of Service Administrator</span>, Electronic Arts, Ireland (Galway)</li>
+                        <li><strong>February 2010 to February 2012: </strong> <span class = "roles"> iTunes Store Support Advisor</span> (French/ English), Teleperformance, Greece Athens   </li>
+                        <li><strong>December 2007 to February 2010: </strong> <span class = "roles">Technical Support for LENOVO (French)</span>, Teleperformance, Greece Athens</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <a href = "#anchor2"> Go to next section</a>
+                <br>
+                <br>
+                <br>
+
+                <!-- Putting Horizontal Rule in div -->
+                <div class="justify-content-center d-flex">
+                    <hr class="w-25"> <!--Width of the hr in the div-->
+                </div>
+
+                <br> <!--Adding multiple break lines to create space fot the anchor tags to jump between sections more obviously-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class ="education col-lg-12 col-md-10 col-sm-10"> 
+                    <h2 class ="headings" id="anchor2" >Education</h2>
+
+                    <ul>
+                        <li> <strong>2021/2022: </strong>Certificate in Science in Computing Online, National College of Ireland.</li>
+                        <li> <strong>2018: </strong>ICA Certificate in Compliance, ICA, International Compliance Association, University of Manchester, Alliance Manchester Business School</li>
+                        <li> <strong>2008: </strong>Diploma Sorbonne2, C2, Greece: French proficiency diploma. </li>
+                        <li> <strong>2007: </strong>License Langues Etrangères Appliquées (Applied Foreign Languages) – Marc Bloch University, Strasbourg, France:
+                            <ul>
+                                <li> Classes based on two main foreign languages: English and Modern Greek. Translation based courses as well as study of civilization and economy in these countries.</li>
+                                <li> Applied business and vocational courses such as computing, word-processing, general business duties/employment laws. Marketing basics, general economics and business, communication.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2005: </strong>Baccalauréat L, High- School Graduate, Literature</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <a href = "#anchor3"> Go to next section</a>
+                <br>
+                <br> <!--Adding multiple break lines to create space fot the anchor tags to jump between sections more obviously-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!-- Putting Horizontal Rule in div -->
+                <div class="justify-content-center d-flex">
+                    <hr class="w-25"> <!--Width of the hr in the div-->
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+
+            <!--Bottom section-->
+            <div class ="skills col-lg-12 col-md-12 col-sm-12" id="anchor3">
+                <div>
+                    <h2 class ="headings" >Skills</h2>
+                </div>
+
+                <div class="skill-wrapper d-flex row g-3 ps-4 pe-4 justify-content-around"> <!--Adding gutters to align the 3 columns and padding to center them on the page + justify around to add equal spaces between them-->
+                    <div class="col-3"> <span class="sk-title">Fluent Languages:</span> English , French, Greek</div>
+                    <div class="col-3 "><span class="sk-title">Tools: </span>Microsoft Office Suite (Outlook, Excel, PowerPoint, Word, Visio); JIRA; SAP Analytics Cloud; Adapt e-learning; LucidChart</div>
+                    <div class="col-3"> <span class="sk-title">  Familiar with: </span>SQL, Java, Python, JavaScript, HTML, CSS, PowerApps; SAP Analytics Cloud; SAP BTP Process Automation low-code/No-code</div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <button class="toTop" onclick="toTop()"> back to top</button> 
+            </div>
+            
+            <br>
+            <br>
+            <br>
+
+            <!-- Putting Horizontal Rule in div -->
+            <div class="justify-content-center d-flex">
+                <hr class="w-25"> <!--Width of the hr in the div-->
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!--Footer-->
+            <div class="justify-content-end d-flex pb-5">   <!--content to the right and adding padding at bottom-->
+                    <a  href="https://www.linkedin.com/in/zouboulia-fanuda/"> 
+                        <img id = "linkedin" src="linkedin.png"> 
+                    </a>
+            </div>
+
         </div>
 	</body>	
 </html>
