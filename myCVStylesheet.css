@@ -79,6 +79,7 @@ text-shadow: 2px 2px 5px #A5F1E9;
 .toTop{
     background-color: inherit;
     border: none;
+    color: black;
 }
 
 .toTop:hover{
