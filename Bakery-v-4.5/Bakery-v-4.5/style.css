@@ -105,11 +105,10 @@ h1,h2{
 /* Middle section */
 
     /* SlideShow */
-
     .middle{
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 60%;
         position: relative; /* position is relative here and the arrows will be positioned absolute on top of this div */
         margin: auto;
         }
