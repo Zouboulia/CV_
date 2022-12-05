@@ -203,7 +203,8 @@ h5,p, h6{
     height: 500px 100%; /* seting container div height to 100% as well so it extends on smaller screens to follow content */
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 90px 60px; 
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: rgb(243,244,249);
 	
 }
