@@ -299,6 +299,7 @@ h5,p, h6{
 	background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+	background-color: white; /* due to background attachment:ficxed not supported on mobile devices*/
 }
 
 .subscription{
