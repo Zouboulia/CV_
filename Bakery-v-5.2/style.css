@@ -112,6 +112,7 @@ h1,h2{
         display: flex;
         flex-wrap: wrap;
         width: 60%;
+	max-width: 800px;
         position: relative; /* position is relative here and the arrows will be positioned absolute on top of this div */
         margin: auto;
         }
@@ -252,6 +253,7 @@ h5,p, h6{
     position: relative;
     text-align: center;
     color: white;
+    max-width: 500px;
 }
 
 .wed-text{   
